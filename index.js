@@ -9,10 +9,18 @@ var i = 0;
 while(i < albums.length){
     albums[i].onclick = function(e) {
         var albumTitle = this.querySelector('.title').textContent;
-        console.log('clicked an album: ', albumTitle);
-        console.log('this title:', this.querySelector('.title').textContent);
-        console.log('this:', this);
+        if(this.classList.contains('selected') !== true){
+            this.classList.add('selected');
+            albumsSelected.push(albumTitle);
+        }
+        else {
+            this.classList.remove('selected');
+            albumsSelected = albumsSelected.filter(function(item){
+                return item !== albumTitle;
+            })
+        }
 
+        console.log(albumsSelected);
     }
     i++;
 }
