@@ -25,4 +25,13 @@ while(i < albums.length){
     i++;
 }
 
-// console.log(albums);
+saveBtn.onclick = function(){
+    itemsTotal.textContent = albumsSelected.length + " items saved"; 
+    notify.classList.add('active');
+
+    setTimeout(function(){
+        notify.classList.remove('active');
+    }, 2000);
+    console.log('saved');
+
+}
