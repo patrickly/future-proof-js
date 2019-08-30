@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+body {
+  background-color: #111;
+  font-family: 'Open Sans', sans-serif;
+}
+h3{
+  color: white;
+  text-align: center;
+}
+.button{
+  background: red;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 100px auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.albums{
+  width: 95%;
+  margin: 0 auto;
+  /*overflow: auto;*/
+}
+.album{
+  max-width: 20%;
+  background: #fff;
+  padding: 15px;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  margin: 15px 2.5%;
+  cursor: pointer;
+}
+.album.selected{
+  -webkit-box-shadow: 0px 0px 161px -5px rgba(48,131,255,1);
+-moz-box-shadow: 0px 0px 161px -5px rgba(48,131,255,1);
+box-shadow: 0px 0px 161px -5px rgba(48,131,255,1);
+}
+.album img{
+  width: 100%;
+}
+.album .title{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+.album .artist{
+  font-size: 10px;
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+.notifications {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.notify {
+  width: 300px;
+  height: 70px;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 0 1px 4px #1c4963;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 10px 0;
+  display: none;
+}
+.notify.active{
+  display: block;
+}
+
+
+.notify:first-child {
+  margin: 0 0 10px 0;
+}
+
+.circle {
+  width: 28px;
+  height: 20px;
+  display: block;
+  border-radius: 100%;
+  transform: translate(17px, 17px);
+  color: whitesmoke;
+  padding: 10px 0 10px 13px;
+}
+
+.gr > .circle {
+  background-color: #38ad65;
+}
+
+.gr > .info span:first-child {
+  color: #38ad65;
+}
+
+.rd > .circle {
+  background-color: #de3b12;
+}
+
+.rd > .info span:first-child {
+  color: #de3b12;
+}
+
+.or > .circle {
+  background-color: #c87a46;
+}
+
+.or > .info span:first-child {
+  color: #c87a46;
+}
+
+.bl > .circle {
+  background-color: #225877;
+}
+
+.bl > .info span:first-child {
+  color: #225877;
+}
+
+.info {
+  width: 230px;
+  height: 70px;
+  transform: translate(70px, -35px);
+  padding: 10px;
+}
+
+.info span:first-child {
+  display: block;
+  color: #38ad65;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.info span:last-child {
+  color: #919191;
+  font-size: 13px;
+}
+
+.info span a {
+  color: #545454;
+  text-decoration: none;
+  font-weight: 600;
+}

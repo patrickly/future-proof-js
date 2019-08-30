@@ -1,28 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/index.css" type="text/css">
-    <title>Document</title>
-</head>
-<body>
-
-<button>click me</button>
-    <ul>
-        <li>
-            <span>icon</span>
-        </li>
-    </ul>
-
-    <script>
-    var btn = document.createElement("div");   // Create a <button> element
-    btn.innerHTML = "This is a div";                   // Insert text
-    document.body.appendChild(btn);               // Append <button> to <body>
-    </script>
-    <script src="/index.js">
-        
-    </script>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="notifications ">
+      <div class="notify gr">
+        <div class="circle">
+          <i class="icon-ok"></i>
+        </div>
+        <div class="info">
+          <span>Download Complete</span>
+          <span class="items-total">4 items saved </span>
+        </div> 
+      </div> 
+    </div> 
+    <h3>Choose the albums you wish to download</h3>
+    
+    <div class="albums">
+      <div class="album">
+        <img src="https://s-media-cache-ak0.pinimg.com/originals/ab/ec/63/abec639de88ff34f411eb6a38d140a8f.jpg" />
+        <div class="title">Blueprint</div>
+        <div class="artist">Jay Z</div>
+      </div>
+      
+      <div class="album">
+        <img src="http://images.complex.com/complex/images/c_scale,w_1100/fl_lossy,pg_1,q_auto/upgnf26rqdfmgvs8opxq/college-dropout" />
+        <div class="title">College Dropout</div>
+        <div class="artist">Kanye West</div>
+      </div>
+      
+      <div class="album ">
+        <img src="http://cps-static.rovicorp.com/3/JPG_500/MI0001/649/MI0001649007.jpg?partner=allrovi.com" />
+        <div class="title">Come Home With Me</div>
+        <div class="artist">Cam'ron</div>
+      </div>
+      
+      <div class="album ">
+        <img src="https://img.discogs.com/qC53yXVMKt3556depDKR5FMEV_8=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/R-347492-1100244696.jpg.jpg" />
+        <div class="title">The Reason</div>
+        <div class="artist">Beanie Siegel</div>
+      </div>
+    </div>
+    
+    <div style="text-align: center;">
+      <div class="button">save</div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
 </html>
